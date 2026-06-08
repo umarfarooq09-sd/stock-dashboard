@@ -134,7 +134,7 @@ public class StockController {
                 ", Up20%: " + up20 +
                 ", Down20%: " + down20;
     }@GetMapping("/stocks")
-    public List<Stock> getAllStocks() {
+    public List<Stock> getAllStocks() {	
         return repository.findAll();
     }
 
